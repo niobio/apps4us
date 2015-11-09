@@ -18,4 +18,4 @@ BoxLayout:
             
     Label:
         id: crono
-        text: '00:00.00
+        text: '00:00.00'
