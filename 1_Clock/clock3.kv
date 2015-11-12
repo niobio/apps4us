@@ -1,0 +1,25 @@
+# File: clock.kv
+
+BoxLayout:
+    orientation: 'vertical'
+    
+    Label:
+        id: time
+        text: '00:00:00'
+        
+    BoxLayout:
+        orientation: 'horizontal'
+        
+        Button:
+            id: start_stop
+            text: 'Start'
+            on_press: app.start_stop()
+            
+        Button:
+            id: reset
+            text: 'Reset'
+            on_press: app.reset()
+            
+    Label:
+        id: crono
+        text: '00:00.00'

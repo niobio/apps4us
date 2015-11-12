@@ -6,6 +6,9 @@ from time import strftime
 
 class ClockApp(App):
 
+    def update_time(self, nap):
+        self.root.ids.time.text = strftime('%H:%M:%S')
+
     def update(self, intervalo):
         self.cron_time += intervalo
     
@@ -20,7 +23,7 @@ class ClockApp(App):
 
     
     def on_start(self):
-        Clock.schedule_interval(self.update, 0.01)
+        Clock.schedule_interval(self.update_time, 1)
 
     
 if __name__ == '__main__':
