@@ -1,0 +1,14 @@
+# File name: suerte.kv
+#:kivy 1.9.0
+
+<MiWidget>:
+    Button:
+        text: 'Suerte'
+        font_size: 22
+        color: .8,.9,0,1
+        size: 100, 50
+        on_press: root.suerte()
+        
+    Label:
+        text: root.cambiar_texto
+        

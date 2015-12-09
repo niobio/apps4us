@@ -1,0 +1,17 @@
+# File name: suerte.py
+from kivy.app import App
+from kivy.uix.widget import Widget
+from kivy.properties import StringProperty
+
+class MiWidget(Widget):
+    def suerte(self):
+        cambiar_texto = "Esto es todo amigos"
+        
+
+class SuerteApp(App):
+    def build(self):
+        return MiWidget()
+        
+
+if __name__=="__main__":
+    SuerteApp().run()

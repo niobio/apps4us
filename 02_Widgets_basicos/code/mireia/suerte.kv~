@@ -1,0 +1,11 @@
+<MyWidget>:
+    Label:
+        id: label
+        pos: 300,200
+        text: 'La vida son dos dias, disfrutala'
+    Button:
+        id: button
+        pos: 200,300
+        size: 300,50
+        text: 'Suerte'
+        on_press: root.suerte()
